@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="413.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <Pane prefWidth="200.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" text="Please Fill Up The Form" textFill="WHITE">
+                    <font>
+                        <Font name="Microsoft New Tai Lue" size="22.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="12.0" top="20.0" />
+                    </padding>
+                </Label>
+            </children>
+        </Pane>
+    </top>
+    <bottom>
+        <HBox alignment="TOP_RIGHT" prefWidth="200.0" style="-fx-background-color: #eceff1;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="id_cancel_bt" mnemonicParsing="false" style="-fx-background-color: #757575;" text="Discard" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <Button fx:id="id_add_bt" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" style="-fx-background-color: #08C1FA;" text="Add New Customer" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets bottom="15.0" left="30.0" right="37.0" top="15.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+    <center>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="420.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="n_id" promptText="NID">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="Name" promptText="Name">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="Address" promptText="Address">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="Phone_no" promptText="Phone no">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="Payment_type" promptText="Payment type">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="Cash_amount" promptText="Cash amount">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="No_of_installments" promptText="No of installments">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="Premium" promptText="Premium">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <VBox.margin>
+                        <Insets bottom="4.0" left="10.0" right="10.0" top="4.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+            </children>
+            <padding>
+                <Insets left="30.0" right="30.0" top="15.0" />
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>

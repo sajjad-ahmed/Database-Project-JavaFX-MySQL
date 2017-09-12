@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="413.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <Pane prefWidth="200.0" style="-fx-background-color: #002F2F;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" text="Please Fill Up This Form" textFill="WHITE">
+                    <font>
+                        <Font name="Microsoft New Tai Lue" size="22.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="15.0" top="20.0" />
+                    </padding>
+                </Label>
+            </children>
+        </Pane>
+    </top>
+    <center>
+        <TabPane fx:id="id_tabpane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab fx:id="id_anc_manager" text="Add Manager">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="id_Date_of_Birth" layoutX="21.0" layoutY="146.0" prefHeight="25.0" prefWidth="129.0" promptText="Date of birth" />
+                                <TextField fx:id="id_nid" layoutX="21.0" layoutY="14.0" prefHeight="25.0" prefWidth="197.0" promptText="N. ID" />
+                                <TextField fx:id="id_Sex" layoutX="164.0" layoutY="146.0" prefHeight="25.0" prefWidth="89.0" promptText="Sex" />
+                                <TextField fx:id="id_Name" layoutX="21.0" layoutY="58.0" prefHeight="25.0" prefWidth="363.0" promptText="Name" />
+                                <TextField fx:id="id_Address" layoutX="21.0" layoutY="100.0" prefHeight="25.0" prefWidth="364.0" promptText="Address" />
+                                <TextField fx:id="id_Salary" layoutX="21.0" layoutY="189.0" prefHeight="25.0" prefWidth="170.0" promptText="Salary" />
+                                <TextField fx:id="id_Password" layoutX="209.0" layoutY="189.0" prefHeight="25.0" prefWidth="173.0" promptText="Choose a Passsword" />
+                          <HBox alignment="TOP_RIGHT" layoutY="288.0" prefHeight="55.0" prefWidth="413.0" style="-fx-background-color: #eceff1;">
+                              <children>
+                                  <Button fx:id="id_cancel_bt" mnemonicParsing="false" style="-fx-background-color: #757575;" text="Discard" textFill="WHITE">
+                                      <HBox.margin>
+                                          <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                                      </HBox.margin>
+                                      <font>
+                                          <Font name="System Bold" size="12.0" />
+                                      </font>
+                                  </Button>
+                                  <Button fx:id="id_add_bt" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" style="-fx-background-color: #08C1FA;" text="Add New Employee" textFill="WHITE">
+                                      <HBox.margin>
+                                          <Insets bottom="15.0" left="30.0" right="37.0" top="15.0" />
+                                      </HBox.margin>
+                                      <font>
+                                          <Font name="System Bold" size="12.0" />
+                                      </font>
+                                  </Button>
+                              </children>
+                          </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="id_anc_salesman" text="Add Salesman">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                        <HBox alignment="TOP_RIGHT" layoutY="288.0" prefHeight="55.0" prefWidth="413.0" style="-fx-background-color: #eceff1;">
+                           <children>
+                              <Button fx:id="id_cancel_bt2" mnemonicParsing="false" style="-fx-background-color: #757575;" text="Discard" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="id_add_bt2" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" style="-fx-background-color: #08C1FA;" text="Add New Employee" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="30.0" right="37.0" top="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                                <TextField fx:id="id_Date_of_Birth1" layoutX="25.0" layoutY="157.0" prefHeight="25.0" prefWidth="129.0" promptText="Date of birth" />
+                                <TextField layoutX="25.0" layoutY="25.0" prefHeight="25.0" prefWidth="197.0" promptText="N. ID" />
+                                <TextField fx:id="id_Sex1" layoutX="168.0" layoutY="157.0" prefHeight="25.0" prefWidth="89.0" promptText="Sex" />
+                                <TextField fx:id="id_Name1" layoutX="25.0" layoutY="69.0" prefHeight="25.0" prefWidth="363.0" promptText="Name" />
+                                <TextField fx:id="id_Address1" layoutX="25.0" layoutY="111.0" prefHeight="25.0" prefWidth="364.0" promptText="Address" />
+                                <TextField fx:id="id_Salary1" layoutX="25.0" layoutY="200.0" prefHeight="25.0" prefWidth="170.0" promptText="Salary" />
+                                <TextField fx:id="id_Password1" layoutX="213.0" layoutY="200.0" prefHeight="25.0" prefWidth="173.0" promptText="Choose a Passsword" />
+                                <TextField fx:id="id_Commission" layoutX="25.0" layoutY="241.0" prefHeight="25.0" prefWidth="197.0" promptText="Commission" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="id_anc_staff" text="Add Staff">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="id_Date_of_Birth11" layoutX="25.0" layoutY="157.0" prefHeight="25.0" prefWidth="129.0" promptText="Date of birth" />
+                                <TextField layoutX="25.0" layoutY="25.0" prefHeight="25.0" prefWidth="197.0" promptText="N. ID" />
+                                <TextField fx:id="id_Sex11" layoutX="168.0" layoutY="157.0" prefHeight="25.0" prefWidth="50.0" promptText="Sex" />
+                                <TextField fx:id="id_Name11" layoutX="25.0" layoutY="69.0" prefHeight="25.0" prefWidth="363.0" promptText="Name" />
+                                <TextField fx:id="id_Address11" layoutX="25.0" layoutY="111.0" prefHeight="25.0" prefWidth="364.0" promptText="Address" />
+                                <TextField fx:id="id_Salary11" layoutX="231.0" layoutY="157.0" prefHeight="25.0" prefWidth="157.0" promptText="Salary" />
+                                <TextField fx:id="id_Staff_Type" layoutX="25.0" layoutY="200.0" prefHeight="25.0" prefWidth="171.0" promptText="Staff Type" />
+                                <TextField fx:id="id_G_location" layoutX="211.0" layoutY="200.0" prefHeight="25.0" prefWidth="176.0" promptText="Guard Location" />
+                                <TextField fx:id="id_Mec_grade" layoutX="212.0" layoutY="242.0" prefHeight="25.0" prefWidth="176.0" promptText="Mechanic grade" />
+                                <TextField fx:id="id_C_type" layoutX="26.0" layoutY="242.0" prefHeight="25.0" prefWidth="171.0" promptText="Cleaner type" />
+                        <HBox alignment="TOP_RIGHT" layoutY="288.0" prefHeight="55.0" prefWidth="413.0" style="-fx-background-color: #eceff1;">
+                           <children>
+                              <Button fx:id="id_cancel_bt1" mnemonicParsing="false" style="-fx-background-color: #757575;" text="Discard" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="id_add_bt1" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" style="-fx-background-color: #08C1FA;" text="Add New Employee" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="30.0" right="37.0" top="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </TabPane>
+    </center>
+</BorderPane>
